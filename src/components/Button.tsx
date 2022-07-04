@@ -1,5 +1,4 @@
 import React, { ButtonHTMLAttributes, forwardRef, Ref } from "react";
-import Spinner from "./Spinner"
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: JSX.Element | string;
@@ -31,7 +30,6 @@ const Button: React.FC<Props> = forwardRef(
         disabled={disabled}
         style={{ cursor: loading ? "not-allowed" : undefined, height, width, ...style }}
       >
-        {loading ? <Spinner /> : children}
       </button>
     );
   }

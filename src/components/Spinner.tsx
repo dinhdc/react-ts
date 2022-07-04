@@ -1,5 +1,4 @@
 import React from "react";
-import Loader from "react-loader-spinner";
 
 interface Props {
   color?: string;
@@ -15,13 +14,7 @@ const Spinner: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <Loader
-        type="Oval"
-        color={color}
-        height={height}
-        width={width}
-        timeout={20000}
-      />
+      
     </>
   );
 };
